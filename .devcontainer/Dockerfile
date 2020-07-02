@@ -15,6 +15,9 @@ COPY maven-settings.xml /usr/share/maven/ref/
 ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG /root/.m2
 
+# install VSOnline Agent
+curl -L https://aka.ms/install-vso-linux | sudo bash
+
 # Configure apt
 # ENV DEBIAN_FRONTEND=noninteractive
 # RUN apt-get update \
