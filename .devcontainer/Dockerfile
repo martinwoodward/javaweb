@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift
 
 # This Dockerfile adds a non-root user with sudo access. Use the "remoteUser"
 # property in devcontainer.json to use it. On Linux, the container user's GID/UIDs
